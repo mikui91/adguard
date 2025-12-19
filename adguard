@@ -23,4 +23,6 @@ services:
     volumes:
       - ./workdir:/opt/adguardhome/work
       - ./confdir:/opt/adguardhome/conf
+    environment:
+      - TZ=America/Mexico_City
     network_mode: bridge
